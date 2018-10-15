@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -234,7 +234,6 @@ GameObject:
   m_Component:
   - component: {fileID: 47204819}
   - component: {fileID: 47204818}
-  - component: {fileID: 47204820}
   m_Layer: 0
   m_Name: ResearchView
   m_TagString: Untagged
@@ -273,17 +272,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &47204820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 47204817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c327e3ddca02c454a83b6b64c240067c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &189964489
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,7 +380,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 295008108}
-  - component: {fileID: 295008107}
   m_Layer: 0
   m_Name: EspionageView
   m_TagString: Untagged
@@ -400,17 +387,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &295008107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 295008106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1452035d331a794ebfb10c0e66a4974, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &295008108
 Transform:
   m_ObjectHideFlags: 0
@@ -572,7 +548,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 466067708}
-  - component: {fileID: 466067707}
   m_Layer: 0
   m_Name: ReportsView
   m_TagString: Untagged
@@ -580,17 +555,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &466067707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 466067706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9eb39d5530e556a4ca406f0f5dfb794a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &466067708
 Transform:
   m_ObjectHideFlags: 0
@@ -1842,7 +1806,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1267664201}
   - component: {fileID: 1267664200}
-  - component: {fileID: 1267664202}
   m_Layer: 0
   m_Name: DiplomacyView
   m_TagString: Untagged
@@ -1881,17 +1844,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1267664202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1267664199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62e2532b9e95c994e8ecb9f45ecf5363, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1280040596
 GameObject:
   m_ObjectHideFlags: 0
@@ -3105,7 +3057,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2022444759}
   - component: {fileID: 2022444758}
-  - component: {fileID: 2022444760}
   m_Layer: 0
   m_Name: ColonyView
   m_TagString: Untagged
@@ -3148,17 +3099,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2022444760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2022444757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 227bb4653bccb504eb256c0480d97385, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2052951623
 GameObject:
   m_ObjectHideFlags: 0
