@@ -17,14 +17,14 @@ namespace Caprica
         public StarSystem()
         {
             Planets = new Planet[MAX_PLANETS];
-
-            //GeneratePlanets();
             
         }
 
+        public Vector3 Position;
+
         private const int MAX_PLANETS = 6;
 
-        private Planet[] planets;
+        private Planet[] Planets;
 
         int starType;       //0 = Yellow, Positive = Older/Les Rich, negative = Younger/Less Habitable
 
@@ -34,14 +34,32 @@ namespace Caprica
 
         public Planet GetPlanet(int PlanetIndex)
         {
-            return planets[PlanetIndex];
+            return Planets[PlanetIndex];
         }
 
-        private void GeneratePlanets()
+        public void Generate(int starType = 0 /* Galactic Age/Richness info?  Perhaps Specific PLanet Generation?  Consider PLayer Starting Planets */)
         {
-            //Generate 0 to max Planets
-            //Weightingh planet Class Based on StarType + distance from Sun
+            this.starType = starType;
+
+        
+            //generate Planets
         }
-		
-	}
+
+        //private void GeneratePlanets(/* Galactic Age/richness info?  What Kinds of Stars to Generate? Consider Player Starting PLanets?*/)
+        //{
+        //    //Generate 0 to max Planets
+        //    //Weightingh planet Class Based on StarType + distance from Sun
+        //}
+
+        public void Load(/* some kind fo File Handle?*/)
+        {
+
+        }
+
+        public void Save( /* some kind of File handle?*/)
+        {
+
+        }
+
+    }
 }
