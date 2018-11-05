@@ -21,22 +21,29 @@ namespace Caprica
         // Consider reading the defaults from a config file
     }
 
-    public class Galaxy : MonoBehaviour
+    public class Galaxy //: MonoBehaviour
     {
-        int galaxyWidth = GalaxyConfig.GalaxyWidth;
-
         public GameObject starPrefab;
+
+        int galaxyWidth = GalaxyConfig.GalaxyWidth;
+        private List<StarSystem> StarSystems;
 
         public Galaxy()
         {
             StarSystems = new List<StarSystem>();
         }
 
-        private List<StarSystem> StarSystems;
+
 
         public StarSystem GetStarSystem(int starSystemId)
         {
             return StarSystems[starSystemId];
+        }
+
+
+        public int GetNumStarSystems()
+        {
+            return StarSystems.Count;
         }
 
         public void Generate()
@@ -56,7 +63,7 @@ namespace Caprica
                 ss.Generate(/* Galactic Age/richness info?  What Kinds of Stars to Generate? Consider Player Starting PLanets?*/);
 
                 //GameObject starGO = 
-                GameObject.Instantiate(starPrefab, ss.Position, Quaternion.identity, this.transform);
+                //GameObject.Instantiate(starPrefab, ss.Position, Quaternion.identity, this.transform);
                 StarSystems.Add(ss);
             }
 

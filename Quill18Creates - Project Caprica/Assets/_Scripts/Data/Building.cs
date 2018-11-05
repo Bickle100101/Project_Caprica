@@ -16,7 +16,7 @@ namespace Caprica
             this.name = name;
             this.requiredProduction = requiredProduction;
             this.unlockedByTechId = unlockedByTechId;
-            this.endOfTurnFunction = endOfTurnFunction;
+           // this.endOfTurnFunction = endOfTurnFunction;
         }
 
         string name;
@@ -26,11 +26,11 @@ namespace Caprica
         int bonusFlatProduction;
 
         public delegate void BuildingEndOfTurnFunction(Colony colony, int currentGameTurn, int builtGameTurn);
-        event BuildingEndOfTurnFunction endOfTurnFunction;
+        event BuildingEndOfTurnFunction EndOfTurnFunction;
 
         public void DoEndOfTurn(Colony colony, int currentGameTurn, int builtGameTurn)
         {
-            endOfTurnFunction(colony, currentGameTurn, builtGameTurn);
+            EndOfTurnFunction(colony, currentGameTurn, builtGameTurn);
         }
 
     }

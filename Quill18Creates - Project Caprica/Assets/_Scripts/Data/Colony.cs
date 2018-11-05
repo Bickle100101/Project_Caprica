@@ -10,7 +10,7 @@ namespace Caprica
 
         public Planet Planet;
 
-        int population { get { return popFarmers + popWorkers + popScientists; } }
+        int Population { get { return popFarmers + popWorkers + popScientists; } }
         int popFarmers;
         int popWorkers;
         int popScientists;

@@ -13,7 +13,10 @@ public class UniverseManager : MonoBehaviour
 
     //Maybe also gets callbacks from end turn
 
+  
+
     Galaxy galaxy;
+
 
 	void Start () 
 	{
@@ -31,5 +34,9 @@ public class UniverseManager : MonoBehaviour
 
         galaxy = new Galaxy();
         galaxy.Generate();
+
+        //tell visual system to spawn graphics
+
+        ViewManager.Instance.GalaxyVisuals.InitiateVisuals(galaxy);
     }
 }

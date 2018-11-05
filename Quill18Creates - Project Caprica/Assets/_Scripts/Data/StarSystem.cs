@@ -26,7 +26,10 @@ namespace Caprica
 
         private Planet[] Planets;
 
-        int starType;       //0 = Yellow, Positive = Older/Les Rich, negative = Younger/Less Habitable
+        public const int MIN_STAR_TYPE = -2; //not best solution review later
+        public const int MAX_STAR_TYPE = 2;
+
+        public int StarType { get; private set; }       //0 = Yellow, Positive = Older/Les Rich, negative = Younger/Less Habitable
 
         public StarSystemGraphic StarSystemGraphic;
 
@@ -37,9 +40,9 @@ namespace Caprica
             return Planets[PlanetIndex];
         }
 
-        public void Generate(int starType = 0 /* Galactic Age/Richness info?  Perhaps Specific PLanet Generation?  Consider PLayer Starting Planets */)
+        public void Generate(int starType = 0) /* Galactic Age/Richness info?  Perhaps Specific PLanet Generation?  Consider PLayer Starting Planets */
         {
-            this.starType = starType;
+            this.StarType = starType;
 
         
             //generate Planets
@@ -59,6 +62,13 @@ namespace Caprica
         public void Save( /* some kind of File handle?*/)
         {
 
+        }
+
+        public int GetStarTypeIndex()
+        {
+            //hacky function to convert range from -2 to +2 to 1 to 4
+
+            return StarType - MIN_STAR_TYPE;
         }
 
     }
